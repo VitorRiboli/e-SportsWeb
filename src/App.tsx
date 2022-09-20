@@ -6,6 +6,8 @@ import { CreateAdBanner } from './components/CreateAdBanner';
 import { GameCard } from './components/GameCard';
 import { CreateAdModal } from './components/CreateAdModal';
 import axios from 'axios';
+import { CreateGameAd } from './components/CreateGameAd';
+import { CreateGameAdModal } from './components/CreateGameAdModal';
 
 
 export interface Game {
@@ -46,8 +48,8 @@ function App() {
               title={game.title}
               bannerUrl={game.banner}
               adsCount={game._count.ads}
-
             />
+            
           )
         })}
       </div>
@@ -56,6 +58,13 @@ function App() {
         <Dialog.Root>
           <CreateAdBanner />
           <CreateAdModal />
+        </Dialog.Root>
+      </div>
+
+      <div className='w-full p-10'>
+        <Dialog.Root>
+          <CreateGameAd />
+          <CreateGameAdModal />
         </Dialog.Root>
       </div>
 

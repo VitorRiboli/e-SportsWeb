@@ -160,7 +160,7 @@ export function CreateAdModal() {
                             className='bg-violet-500 rounded-md px-5 h-12 font-semibold flex items-center gap-3 hover:bg-violet-600'
                         >
                             <GameController size={24} />
-                            Encontrat um Parceiro
+                            Encontrar um Parceiro
                         </button>
 
                     </footer>
